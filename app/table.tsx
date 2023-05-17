@@ -20,8 +20,8 @@ export default async function UsersTable({ users }: { users: User[] }) {
     <Table>
       <TableHead>
         <TableRow>
-          <TableHeaderCell>Name</TableHeaderCell>
-          <TableHeaderCell>Username</TableHeaderCell>
+          <TableHeaderCell>Imię</TableHeaderCell>
+          <TableHeaderCell>Nazwisko</TableHeaderCell>
           <TableHeaderCell>Email</TableHeaderCell>
         </TableRow>
       </TableHead>

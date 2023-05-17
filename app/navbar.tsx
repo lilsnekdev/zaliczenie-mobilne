@@ -8,8 +8,8 @@ import { signIn, signOut } from 'next-auth/react';
 import Image from 'next/image';
 
 const navigation = [
-  { name: 'Dashboard', href: '/' },
-  { name: 'Playground', href: '/playground' }
+  { name: 'Użytkownicy', href: '/' },
+  { name: 'Przedmioty', href: '/playground' }
 ];
 
 function classNames(...classes: string[]) {
@@ -71,7 +71,7 @@ export default function Navbar({ user }: { user: any }) {
                 <Menu as="div" className="relative ml-3">
                   <div>
                     <Menu.Button className="flex rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2">
-                      <span className="sr-only">Open user menu</span>
+                      <span className="p-1.5">Logowanie</span>
                       <Image
                         className="h-8 w-8 rounded-full"
                         src={user?.image || 'https://avatar.vercel.sh/leerob'}
@@ -101,7 +101,7 @@ export default function Navbar({ user }: { user: any }) {
                               )}
                               onClick={() => signOut()}
                             >
-                              Sign out
+                              Wyloguj się
                             </button>
                           )}
                         </Menu.Item>
@@ -115,7 +115,7 @@ export default function Navbar({ user }: { user: any }) {
                               )}
                               onClick={() => signIn('github')}
                             >
-                              Sign in
+                              Zaloguj się
                             </button>
                           )}
                         </Menu.Item>
@@ -183,7 +183,7 @@ export default function Navbar({ user }: { user: any }) {
                       onClick={() => signOut()}
                       className="block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800"
                     >
-                      Sign out
+                      Wyloguj się
                     </button>
                   </div>
                 </>
@@ -193,7 +193,7 @@ export default function Navbar({ user }: { user: any }) {
                     onClick={() => signIn('github')}
                     className="flex w-full px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800"
                   >
-                    Sign in
+                    Zaloguj się
                   </button>
                 </div>
               )}

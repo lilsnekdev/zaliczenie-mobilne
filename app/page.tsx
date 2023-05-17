@@ -19,9 +19,10 @@ export default async function IndexPage({
 
   return (
     <main className="p-4 md:p-10 mx-auto max-w-7xl">
-      <Title>Users</Title>
+      <Title>Tabela użytkowników</Title>
       <Text>
-        A list of users retrieved from a MySQL database (PlanetScale).
+        Lista użytkowników pobrana z bazy danych MySQL (z serwera chmurowego PlanetScale).
+        Projekt przygotowany na zaliczenie przedmiotu Projektowanie serwisów internetowych dla urządzeń mobilnych.
       </Text>
       <Search />
       <Card className="mt-6">

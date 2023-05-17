@@ -2,13 +2,12 @@ import './globals.css';
 
 import { Analytics } from '@vercel/analytics/react';
 import Nav from './nav';
-import Toast from './toast';
 import { Suspense } from 'react';
 
 export const metadata = {
-  title: 'Next.js 13 + PlanetScale + NextAuth + Tailwind CSS',
+  title: 'Szymon Tarczewski 54698',
   description:
-    'A user admin dashboard configured with Next.js, PlanetScale, NextAuth, Tailwind CSS, TypeScript, ESLint, and Prettier.'
+    'Projekt przygotowany na zaliczenie przedmiotu Projektowanie serwisów internetowych dla urządzeń mobilnych'
 };
 
 export default async function RootLayout({
@@ -25,7 +24,6 @@ export default async function RootLayout({
         </Suspense>
         {children}
         <Analytics />
-        <Toast />
       </body>
     </html>
   );

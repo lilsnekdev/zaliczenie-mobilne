@@ -9,8 +9,16 @@ interface User {
   email: string;
 }
 
+interface Item {
+  id: Generated<number>;
+  price: number;
+  quantity: number;
+  email: string;
+}
+
 interface Database {
   users: User;
+  items: Item;
   // https://github.com/nextauthjs/next-auth/issues/4922
 }
 
